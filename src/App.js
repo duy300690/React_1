@@ -1,23 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "./App.css";
+import Toggle from "./components/state/Toggle";
+import YoutubeList from "./components/youtube/YoutubeList";
+import Game from "./components/tictactoe/Game";
+import Button from "./components/button/Button";
+import Card from "./components/card/Card";
+import CardList from "./components/card/CardList";
+import { GlobleStyle } from "./GlobalStyle";
+import Photos from "./components/photo/Photos";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {/* <Toggle></Toggle>
+      <YoutubeList></YoutubeList>
+      <Game></Game>
+      <Button>Primary</Button>
+      <Button secondary>Secondary</Button> */}
+      {/* <GlobleStyle></GlobleStyle>
+      <CardList>
+        <Card secondary = {true}></Card>
+        <Card></Card>
+        <Card></Card>
+        <Card></Card>
+        <Card></Card>
+      </CardList> */}
+      <Photos></Photos>
     </div>
   );
 }
